@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mauli Stone Crusher</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo-container">
+
+<img src="img/logo.png" alt="MSC Logo" class="logo">
+
+<div class="company">
+
+<h2>MAULI STONE CRUSHER</h2>
+
+<p>Strength in Every Stone</p>
+
+</div>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#products">Products</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>MAULI STONE CRUSHER</h1>
+
+<p>
+Premium Aggregates, Crush Sand &
+GSB Material Supplier
+</p>
+
+<div class="hero-buttons">
+
+<a href="#products" class="btn">
+Explore Products
+</a>
+
+<a href="#contact" class="btn2">
+Get Quote
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2>About Us</h2>
+
+<div class="about-box">
+
+<p>
+
+Mauli Stone Crusher is a trusted name in the construction materials industry,
+specializing in the production and supply of high-quality stone aggregates,
+crush sand, and GSB materials.
+
+We are committed to delivering reliable products, timely service,
+and customer satisfaction for residential, commercial,
+and infrastructure projects.
+
+With modern crushing operations and strict quality standards,
+we ensure every load meets industry requirements.
+
+Our mission is to provide durable construction materials
+that help build stronger roads, buildings, and infrastructure
+for the future.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+
+<h2>Our Products</h2>
+
+<div class="product-grid">
+
+<div class="card">
+<h3>10 MM Aggregate</h3>
+<p>High-quality aggregate for RCC work.</p>
+</div>
+
+<div class="card">
+<h3>20 MM Aggregate</h3>
+<p>Perfect for concrete construction.</p>
+</div>
+
+<div class="card">
+<h3>40 MM Aggregate</h3>
+<p>Suitable for foundations and roads.</p>
+</div>
+
+<div class="card">
+<h3>60 MM Aggregate</h3>
+<p>Heavy-duty infrastructure projects.</p>
+</div>
+
+<div class="card">
+<h3>Crush Sand</h3>
+<p>Premium manufactured sand.</p>
+</div>
+
+<div class="card">
+<h3>GSB Material</h3>
+<p>Road construction sub-base material.</p>
+</div>
+
+</div>
+
+</section>
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="img/IMG_2254.PNG" alt="Gallery Image">
+<img src="img/IMG_2256.PNG" alt="Gallery Image">
+<img src="img/IMG_2259.JPG.jpeg" alt="Gallery Image">
+<img src="img/s  l.png" alt="Gallery Image">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<form id="whatsappForm">
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required>
+
+<input
+type="text"
+id="phone"
+placeholder="Phone Number"
+required>
+
+<select id="product">
+
+<option>10 MM Aggregate</option>
+<option>20 MM Aggregate</option>
+<option>40 MM Aggregate</option>
+<option>60 MM Aggregate</option>
+<option>Crush Sand</option>
+<option>GSB Material</option>
+
+</select>
+
+<input
+type="text"
+id="quantity"
+placeholder="Required Quantity">
+
+<textarea
+id="message"
+placeholder="Delivery Location / Message">
+</textarea>
+
+<button
+type="button"
+onclick="sendWhatsApp()">
+
+Send Inquiry
+
+</button>
+
+</form>
+
+</section>
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+href="https://wa.me/918624062801"
+class="whatsapp"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Mauli Stone Crusher
+</p>
+
+</footer>
+
+<script>
+
+function sendWhatsApp(){
+
+let name =
+document.getElementById("name").value;
+
+let phone =
+document.getElementById("phone").value;
+
+let product =
+document.getElementById("product").value;
+
+let quantity =
+document.getElementById("quantity").value;
+
+let message =
+document.getElementById("message").value;
+
+let text =
+"Hello Mauli Stone Crusher%0A%0A" +
+
+"Name: " + name + "%0A" +
+
+"Phone: " + phone + "%0A" +
+
+"Product: " + product + "%0A" +
+
+"Quantity: " + quantity + "%0A" +
+
+"Message: " + message;
+
+window.open(
+"https://wa.me/918624062801?text=" + text,
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>
